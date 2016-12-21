@@ -1905,8 +1905,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f02005e
 			public const int LockIcon = 2130837598;
 			
-			// aapt resource value: 0x7f020071
-			public const int notification_template_icon_bg = 2130837617;
+			// aapt resource value: 0x7f020072
+			public const int notification_template_icon_bg = 2130837618;
 			
 			// aapt resource value: 0x7f02005f
 			public const int PersonIcon = 2130837599;
@@ -1962,6 +1962,9 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f020070
 			public const int UserIcon = 2130837616;
 			
+			// aapt resource value: 0x7f020071
+			public const int userimg = 2130837617;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -1993,11 +1996,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f060077
 			public const int PasswordText = 2131099767;
 			
-			// aapt resource value: 0x7f06008a
-			public const int ProfileRoot = 2131099786;
-			
-			// aapt resource value: 0x7f06008b
-			public const int RecordsRoot = 2131099787;
+			// aapt resource value: 0x7f0600a1
+			public const int RecordsRoot = 2131099809;
 			
 			// aapt resource value: 0x7f06007b
 			public const int RegisterButton = 2131099771;
@@ -2005,23 +2005,23 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f06007c
 			public const int Root = 2131099772;
 			
-			// aapt resource value: 0x7f06008e
-			public const int ScheduleContent = 2131099790;
+			// aapt resource value: 0x7f0600a4
+			public const int ScheduleContent = 2131099812;
 			
-			// aapt resource value: 0x7f06008d
-			public const int ScheduleRemindersFrame = 2131099789;
+			// aapt resource value: 0x7f0600a3
+			public const int ScheduleRemindersFrame = 2131099811;
 			
-			// aapt resource value: 0x7f06008c
-			public const int ScheduleRoot = 2131099788;
+			// aapt resource value: 0x7f0600a2
+			public const int ScheduleRoot = 2131099810;
 			
-			// aapt resource value: 0x7f06008f
-			public const int ScheduleSlidingTabs = 2131099791;
+			// aapt resource value: 0x7f0600a5
+			public const int ScheduleSlidingTabs = 2131099813;
 			
-			// aapt resource value: 0x7f060090
-			public const int ScheduleViewPager = 2131099792;
+			// aapt resource value: 0x7f0600a6
+			public const int ScheduleViewPager = 2131099814;
 			
-			// aapt resource value: 0x7f060091
-			public const int SearchDoctorRoot = 2131099793;
+			// aapt resource value: 0x7f0600a7
+			public const int SearchDoctorRoot = 2131099815;
 			
 			// aapt resource value: 0x7f060075
 			public const int SlidingTabs = 2131099765;
@@ -2257,6 +2257,72 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f060029
 			public const int pin = 2131099689;
 			
+			// aapt resource value: 0x7f06008f
+			public const int prAppCompatImageView = 2131099791;
+			
+			// aapt resource value: 0x7f060097
+			public const int prAppCompatImageView1 = 2131099799;
+			
+			// aapt resource value: 0x7f06009e
+			public const int prAppCompatImageView2 = 2131099806;
+			
+			// aapt resource value: 0x7f060094
+			public const int prBloodGroup = 2131099796;
+			
+			// aapt resource value: 0x7f060095
+			public const int prChangePasswordButton = 2131099797;
+			
+			// aapt resource value: 0x7f060098
+			public const int prChangePasswordLayout = 2131099800;
+			
+			// aapt resource value: 0x7f06009b
+			public const int prConformPassword = 2131099803;
+			
+			// aapt resource value: 0x7f06008b
+			public const int prDoctorImage = 2131099787;
+			
+			// aapt resource value: 0x7f06008c
+			public const int prDoctorName = 2131099788;
+			
+			// aapt resource value: 0x7f060092
+			public const int prEmail = 2131099794;
+			
+			// aapt resource value: 0x7f060093
+			public const int prMobileNo = 2131099795;
+			
+			// aapt resource value: 0x7f06009a
+			public const int prNewPassword = 2131099802;
+			
+			// aapt resource value: 0x7f060099
+			public const int prOldPassword = 2131099801;
+			
+			// aapt resource value: 0x7f06008d
+			public const int prProfileButton = 2131099789;
+			
+			// aapt resource value: 0x7f060090
+			public const int prProfileLayout = 2131099792;
+			
+			// aapt resource value: 0x7f06009c
+			public const int prQuickButton = 2131099804;
+			
+			// aapt resource value: 0x7f06009f
+			public const int prQuickLayout = 2131099807;
+			
+			// aapt resource value: 0x7f06008a
+			public const int prRootLayout = 2131099786;
+			
+			// aapt resource value: 0x7f060091
+			public const int prUserName = 2131099793;
+			
+			// aapt resource value: 0x7f06008e
+			public const int prUsericon = 2131099790;
+			
+			// aapt resource value: 0x7f060096
+			public const int prUsericon1 = 2131099798;
+			
+			// aapt resource value: 0x7f06009d
+			public const int prUsericon2 = 2131099805;
+			
 			// aapt resource value: 0x7f060006
 			public const int progress_circular = 2131099654;
 			
@@ -2265,6 +2331,9 @@ namespace ProHealth.Droid
 			
 			// aapt resource value: 0x7f06003a
 			public const int prohealth_icon = 2131099706;
+			
+			// aapt resource value: 0x7f0600a0
+			public const int prquickText = 2131099808;
 			
 			// aapt resource value: 0x7f060055
 			public const int radio = 2131099733;
