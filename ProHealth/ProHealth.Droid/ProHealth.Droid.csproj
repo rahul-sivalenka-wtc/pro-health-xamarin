@@ -92,6 +92,7 @@
     <Compile Include="AndroidNinjectModule.cs" />
     <Compile Include="App.cs" />
     <Compile Include="CustomControls\ProHealthIconTextView.cs" />
+    <Compile Include="Extensions\ViewExtensions.cs" />
     <Compile Include="Fragments\BaseFragment.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Fragments\LoginFragment.cs" />
@@ -297,6 +298,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Attrs.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\userimg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
