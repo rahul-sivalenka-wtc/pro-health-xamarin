@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <!-- General colors -->
+  <color name="colorPrimary">@color/white</color>
+  <color name="colorPrimaryDark">@color/appGray</color>
+  <color name="colorAccent">@color/white</color>
+
+  <!-- App Colors -->
+  <color name="appBlue">#00BCD4</color>
+  <color name="appGray">#303030</color>
+  
+  <!-- White to Black -->
+  <color name="white">#FFFFFF</color>
+  <color name="light_gray">#EFF2F5</color>
+  <color name="med_gray">#C7D2DC</color>
+  <color name="gray">#5C7082</color>
+  <color name="dark_gray">#FF2B343D</color>
+  <color name="black">#0D131A</color>
+  <color name="text_gray">#5A6570</color>
+  <color name="light_gray">
+    #E0E5E4
+  </color>
+</resources>
