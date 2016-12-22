@@ -16,8 +16,15 @@ using ProHealth.Droid.Helpers;
 
 namespace ProHealth.Droid.CustomControls
 {
+    public enum ProHealthTypeface
+    {
+        ProHealthIcon = 0
+    }
+
     public class ProHealthIconTextView : TextView
     {
+        private static readonly Dictionary<int, Typeface> Typefaces = new Dictionary<int, Typeface>(26);
+
         public ProHealthIconTextView(Context context) :
             base(context)
         {
@@ -45,7 +52,11 @@ namespace ProHealth.Droid.CustomControls
         {
             try
             {
-                var font = this.ObtainTypeface(context);
+                TypedArray values = context.ObtainStyledAttributes(attrs, Resource.Styleable.ProHealthIconTextView);
+
+                int typefaceValue = values.GetInt(Resource.Styleable.RobotoTextView_typeface, 0);
+                values.Recycle();
+                var font = this.ObtainTypeface(context, typefaceValue);
                 this.SetTypeface(font, TypefaceStyle.Normal);
             }
             catch (Exception)
@@ -54,16 +65,47 @@ namespace ProHealth.Droid.CustomControls
             }
         }
 
-        private Typeface ObtainTypeface(Context context)
+        private Typeface ObtainTypeface(Context context, int typefaceValue)
         {
             try
             {
-                var typeface = Typeface.CreateFromAsset(context.Assets, Constants.ProHealthIconFontPath);
+                Typeface typeface = null;
+                if (Typefaces.ContainsKey(typefaceValue))
+                    typeface = Typefaces[typefaceValue];
+
+                if (typeface == null)
+                {
+                    typeface = this.CreateTypeface(context, typefaceValue);
+                    Typefaces.Add(typefaceValue, typeface);
+                }
                 return typeface;
             }
             catch (Exception ex)
             {
 
+            }
+
+            return null;
+        }
+
+        private Typeface CreateTypeface(Context context, int typefaceValue)
+        {
+            try
+            {
+                Typeface typeface;
+                switch (typefaceValue)
+                {
+                    case ProHealthTypeface.ProHealthIcon:
+                        typeface = Typeface.CreateFromAsset(context.Assets, Constants.ProHealthIconFontPath);
+                        break;
+                    default:
+                        throw new ArgumentException("Unknown typeface attribute value " + typefaceValue);
+                }
+                return typeface;
+
+            }
+            catch (Exception)
+            {
             }
 
             return null;
