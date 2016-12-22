@@ -1,8 +1,10 @@
 using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
 using Android.Support.V7.App;
 using Android.Views;
+using ProHealth.Droid.Helpers;
 using System;
 using Fragment = Android.Support.V4.App.Fragment;
 using FragmentTransaction = Android.Support.V4.App.FragmentTransaction;
@@ -18,6 +20,7 @@ namespace ProHealth.Droid.Fragments
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            Typeface.CreateFromAsset(ParentActivity.Assets, Constants.ProHealthIconFontPath);
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)

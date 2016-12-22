@@ -22,7 +22,7 @@ namespace ProHealth.Droid
 
         private void ShowLogin()
         {
-            GotoNextFragment<LoginFragment>(Resource.Id.Root, false);
+            GotoNextFragment<LoginFragment>(Resource.Id.RootFrame, false);
         }
     }
 }

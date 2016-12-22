@@ -1,10 +1,12 @@
 using Android.App;
 using Android.Content;
+using Android.Graphics;
 using Android.OS;
 using Android.Support.V7.App;
 using System;
 using Fragment = Android.Support.V4.App.Fragment;
 using FragmentTransaction = Android.Support.V4.App.FragmentTransaction;
+using ProHealth.Droid.Helpers;
 
 namespace ProHealth.Droid.Activities
 {
@@ -16,6 +18,7 @@ namespace ProHealth.Droid.Activities
         {
             base.OnCreate(savedInstanceState);
             SetContentView(ActivityLayoutId);
+            Typeface.CreateFromAsset(Assets, Constants.ProHealthIconFontPath);
         }
 
         protected void GotoNextActivity<TActivity>()

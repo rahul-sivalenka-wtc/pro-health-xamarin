@@ -88,21 +88,31 @@
     <Compile Include="Activities\BaseActivity.cs" />
     <Compile Include="Activities\HomeActivity.cs" />
     <Compile Include="Adapters\HomeViewPagerAdapter.cs" />
+    <Compile Include="Adapters\SchedulePagerAdapter.cs" />
     <Compile Include="AndroidNinjectModule.cs" />
     <Compile Include="App.cs" />
+    <Compile Include="CustomControls\ProHealthIconTextView.cs" />
     <Compile Include="Fragments\BaseFragment.cs" />
     <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Fragments\Dialogs\CustomDialogFragment.cs" />
     <Compile Include="Fragments\LoginFragment.cs" />
     <Compile Include="Fragments\Profile\ProfileContainerFragment.cs" />
     <Compile Include="Fragments\Records\RecordsContainerFragment.cs" />
+    <Compile Include="Fragments\Schedule\AppointmentsFragment.cs" />
+    <Compile Include="Fragments\Schedule\DietFragment.cs" />
+    <Compile Include="Fragments\Schedule\RemindersFragment.cs" />
     <Compile Include="Fragments\Schedule\ScheduleContainerFragment.cs" />
+    <Compile Include="Fragments\Schedule\ScheduleFragment.cs" />
+    <Compile Include="Fragments\Schedule\WorkoutFragment.cs" />
     <Compile Include="Fragments\SearchDoctor\SearchDoctorContainerFragment.cs" />
+    <Compile Include="Helpers\Constants.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ReminderService.cs" />
     <Compile Include="SplashScreen.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\Fonts\Pro-Health.ttf" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
@@ -122,6 +132,15 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\ProfileContainerView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ScheduleAppointmentsView.axml" />
+    <AndroidResource Include="Resources\layout\ScheduleDietView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ScheduleRemindersView.axml" />
+    <AndroidResource Include="Resources\layout\ScheduleWorkoutView.axml" />
+    <AndroidResource Include="Resources\layout\ScheduleView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
