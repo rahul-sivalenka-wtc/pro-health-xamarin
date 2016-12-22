@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:local="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/appGray"
+              android:padding="5dp"
+              android:gravity="center"
+              android:id="@+id/TabTemplateRoot">
+  
+  <prohealth.droid.customcontrols.ProHealthIconTextView
+      local:typeface="prohealth_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/TabIcon"
+      android:textSize="35sp"
+      android:textColor="@color/white"
+      android:gravity="center"
+      android:layout_marginBottom="5dp"
+      android:background="@drawable/roundtabselector_small"/>
+  
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/TabText"
+      android:gravity="center"
+      android:textAppearance="@style/TabTextAppearance"
+      android:ellipsize="end"
+      android:maxLines="1"
+      android:textColor="@color/white"/>
+
+</LinearLayout>

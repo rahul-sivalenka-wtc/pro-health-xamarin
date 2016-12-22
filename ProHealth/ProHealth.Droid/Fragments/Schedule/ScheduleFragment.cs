@@ -31,33 +31,38 @@ namespace ProHealth.Droid.Fragments.Schedule
             "Diet",
             "Workout"
         });
+        private SchedulePagerAdapter adapter;
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             var view = base.OnCreateView(inflater, container, savedInstanceState);
 
-            InitTabs(view);
+            SetupViewPager(view);
 
             return view;
         }
 
-        private void InitTabs(View view)
+        private void SetupViewPager(View view)
         {
             viewPager = view.FindViewById<ViewPager>(Resource.Id.ScheduleViewPager);
-            viewPager.Adapter = new SchedulePagerAdapter(ParentActivity.SupportFragmentManager, fragments, titles);
+            adapter = new SchedulePagerAdapter(ParentActivity.SupportFragmentManager, fragments, titles, ParentActivity, new char[] { 'f', 'g', 'i', 'h' });
+            viewPager.Adapter = adapter;
 
             tabLayout = view.FindViewById<TabLayout>(Resource.Id.ScheduleSlidingTabs);
             tabLayout.SetupWithViewPager(viewPager);
 
-            SetTabIcons();
+            SetupCustomTabs();
         }
 
-        private void SetTabIcons()
+        private void SetupCustomTabs()
         {
-            tabLayout.GetTabAt(0).SetIcon(Resource.Drawable.PersonIcon);
-            tabLayout.GetTabAt(1).SetIcon(Resource.Drawable.PersonIcon);
-            tabLayout.GetTabAt(2).SetIcon(Resource.Drawable.PersonIcon);
-            tabLayout.GetTabAt(3).SetIcon(Resource.Drawable.PersonIcon);
+            for (int i = 0, count = tabLayout.TabCount; i < count; i++)
+            {
+                TabLayout.Tab t = tabLayout.GetTabAt(i);
+                t.SetCustomView(adapter.GetTabView(i));
+            }
+
+            tabLayout.GetTabAt(0)?.Select();
         }
     }
 }
