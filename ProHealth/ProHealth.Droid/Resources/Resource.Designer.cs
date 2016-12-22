@@ -2044,14 +2044,14 @@ namespace ProHealth.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f06008a
-			public const int ButtonsList = 2131099786;
-			
-			// aapt resource value: 0x7f060084
-			public const int DoctorInfoSlidingTabs = 2131099780;
-			
 			// aapt resource value: 0x7f060085
-			public const int DoctorInfoViewPager = 2131099781;
+			public const int ButtonsList = 2131099781;
+			
+			// aapt resource value: 0x7f06008b
+			public const int DoctorInfoSlidingTabs = 2131099787;
+			
+			// aapt resource value: 0x7f06008c
+			public const int DoctorInfoViewPager = 2131099788;
 			
 			// aapt resource value: 0x7f06008d
 			public const int EmailText = 2131099789;
@@ -2062,8 +2062,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f060090
 			public const int LoginButton = 2131099792;
 			
-			// aapt resource value: 0x7f060083
-			public const int MainContent = 2131099779;
+			// aapt resource value: 0x7f060087
+			public const int MainContent = 2131099783;
 			
 			// aapt resource value: 0x7f060091
 			public const int OrText = 2131099793;
@@ -2098,11 +2098,11 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f0600be
 			public const int SearchDoctorRoot = 2131099838;
 			
-			// aapt resource value: 0x7f06008c
-			public const int SlidingTabs = 2131099788;
+			// aapt resource value: 0x7f060089
+			public const int SlidingTabs = 2131099785;
 			
-			// aapt resource value: 0x7f06008b
-			public const int ViewPager = 2131099787;
+			// aapt resource value: 0x7f060088
+			public const int ViewPager = 2131099784;
 			
 			// aapt resource value: 0x7f060094
 			public const int action0 = 2131099796;
@@ -2158,8 +2158,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f06001e
 			public const int always = 2131099678;
 			
-			// aapt resource value: 0x7f060080
-			public const int appCompatButton2 = 2131099776;
+			// aapt resource value: 0x7f06007f
+			public const int appCompatButton2 = 2131099775;
 			
 			// aapt resource value: 0x7f06001b
 			public const int beginning = 2131099675;
@@ -2212,8 +2212,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f060052
 			public const int customPanel = 2131099730;
 			
-			// aapt resource value: 0x7f060088
-			public const int date = 2131099784;
+			// aapt resource value: 0x7f060083
+			public const int date = 2131099779;
 			
 			// aapt resource value: 0x7f06005b
 			public const int decor_content_parent = 2131099739;
@@ -2251,8 +2251,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f060078
 			public const int doctorName = 2131099768;
 			
-			// aapt resource value: 0x7f060081
-			public const int doctorsRecycler = 2131099777;
+			// aapt resource value: 0x7f060080
+			public const int doctorsRecycler = 2131099776;
 			
 			// aapt resource value: 0x7f06005f
 			public const int edit_query = 2131099743;
@@ -2287,11 +2287,11 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f0600c3
 			public const int fButton1 = 2131099843;
 			
-			// aapt resource value: 0x7f060086
-			public const int fDivider = 2131099782;
+			// aapt resource value: 0x7f060081
+			public const int fDivider = 2131099777;
 			
-			// aapt resource value: 0x7f060089
-			public const int fDivider2 = 2131099785;
+			// aapt resource value: 0x7f060084
+			public const int fDivider2 = 2131099780;
 			
 			// aapt resource value: 0x7f060035
 			public const int fill = 2131099701;
@@ -2341,8 +2341,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f060044
 			public const int list_item = 2131099716;
 			
-			// aapt resource value: 0x7f06007f
-			public const int main_content = 2131099775;
+			// aapt resource value: 0x7f060086
+			public const int main_content = 2131099782;
 			
 			// aapt resource value: 0x7f060097
 			public const int media_actions = 2131099799;
@@ -2620,11 +2620,11 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f06000a
 			public const int view_offset_helper = 2131099658;
 			
-			// aapt resource value: 0x7f060087
-			public const int weeksLayout = 2131099783;
-			
 			// aapt resource value: 0x7f060082
-			public const int weeksLayouts = 2131099778;
+			public const int weeksLayout = 2131099778;
+			
+			// aapt resource value: 0x7f06008a
+			public const int weeksLayouts = 2131099786;
 			
 			// aapt resource value: 0x7f060022
 			public const int withText = 2131099682;

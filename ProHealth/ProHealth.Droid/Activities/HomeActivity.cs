@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Support.Design.Widget;
 using Android.Support.V4.View;
+using Android.Views;
 using Java.Lang;
 using ProHealth.Droid.Adapters;
 using ProHealth.Droid.Fragments.Profile;
@@ -41,6 +42,20 @@ namespace ProHealth.Droid.Activities
             "Profile"
         });
 
+        Fragment[] weeksFragments = new Fragment[] {
+                new MondayFragment(),
+                new TuesdayFragment(),
+                new WednesdayFragment(),
+                new ThursdayFragment(),
+                new FridayFragment(),
+                new SaturdayFragment()
+             };
+
+        ICharSequence[] weeksTitles = CharSequence.ArrayFromStringArray(new[] {
+                    "M","T","W","T","F","S"
+                });
+        private BottomSheetBehavior mBottomSheetBehavior;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -51,7 +66,25 @@ namespace ProHealth.Droid.Activities
             tabLayout = FindViewById<TabLayout>(Resource.Id.SlidingTabs);
             tabLayout.SetupWithViewPager(viewPager);
 
+            View bottomSheet = FindViewById(Resource.Id.weeksLayouts);
+            bottomSheet.BringToFront();
+            mBottomSheetBehavior = BottomSheetBehavior.From(bottomSheet);
+            OncreteTabLayout();
+
             SetTabIcons();
+        }
+
+        private void OncreteTabLayout()
+        {
+            viewPager = FindViewById<ViewPager>(Resource.Id.DoctorInfoViewPager);
+            viewPager.Adapter = new TabsFragmentPagerAdapter(SupportFragmentManager, weeksFragments, weeksTitles);
+            var doctorInfoTabLayout = FindViewById<TabLayout>(Resource.Id.DoctorInfoSlidingTabs);
+            doctorInfoTabLayout.SetupWithViewPager(viewPager);
+
+        }
+        public void ShowBottomSheet()
+        {
+            mBottomSheetBehavior.State = BottomSheetBehavior.StateExpanded;
         }
 
         private void SetTabIcons()

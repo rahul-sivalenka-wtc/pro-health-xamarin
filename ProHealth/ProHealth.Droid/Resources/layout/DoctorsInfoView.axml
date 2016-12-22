@@ -1,51 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:local="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_content"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true">
-    <RelativeLayout
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:local="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:background="@color/appGray"
         android:layout_height="match_parent">
-        <android.support.v7.widget.RecyclerView
-            android:layout_below="@+id/appCompatButton2"
-            android:id="@+id/doctorsRecycler"
-            android:background="@color/appGray"
-            android:scrollbars="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:background="@color/white"
-        android:id="@+id/weeksLayouts"
-        local:layout_behavior="android.support.design.widget.BottomSheetBehavior"
-        android:clipToPadding="true"
-        android:layout_height="250dp">
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/MainContent">
-            <android.support.design.widget.TabLayout
-                android:id="@+id/DoctorInfoSlidingTabs"
-                android:layout_width="match_parent"
-                android:background="@color/appGray"
-                local:tabBackground="@drawable/tabselector"
-                local:tabMode="fixed"
-                local:tabTextAppearance="@style/TabTextAppearance"
-                local:tabSelectedTextColor="@color/appGray"
-                local:tabTextColor="@color/light_gray"
-                android:layout_height="wrap_content" />
-
-          <android.support.v4.view.ViewPager
-             android:id="@+id/DoctorInfoViewPager"
-             android:layout_width="match_parent"
-             android:layout_height="0px"
-             android:layout_weight="1"
-             android:background="@android:color/white" />
-        </LinearLayout>
-    </RelativeLayout>
-</android.support.design.widget.CoordinatorLayout>
+  <android.support.v7.widget.RecyclerView
+      android:layout_below="@+id/appCompatButton2"
+      android:id="@+id/doctorsRecycler"
+      android:background="@color/appGray"
+      android:scrollbars="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+</RelativeLayout>
