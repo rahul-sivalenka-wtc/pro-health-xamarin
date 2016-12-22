@@ -94,6 +94,7 @@
     <Compile Include="Adapters\DoctorsInfoAdapter.cs" />
     <Compile Include="Adapters\HomeViewPagerAdapter.cs" />
     <Compile Include="Adapters\SearchDoctorListAdapter.cs" />
+    <Compile Include="Adapters\TabsFragmentPagerAdapter.cs" />
     <Compile Include="AndroidNinjectModule.cs" />
     <Compile Include="App.cs" />
     <Compile Include="Extensions\ViewExtensions.cs" />
@@ -104,6 +105,12 @@
     <Compile Include="Fragments\Records\RecordsContainerFragment.cs" />
     <Compile Include="Fragments\Schedule\ScheduleContainerFragment.cs" />
     <Compile Include="Fragments\SearchDoctor\DoctorsInfoFragment.cs" />
+    <Compile Include="Fragments\SearchDoctor\TuesdayFragment.cs" />
+    <Compile Include="Fragments\SearchDoctor\WednesdayFragment.cs" />
+    <Compile Include="Fragments\SearchDoctor\ThursdayFragment.cs" />
+    <Compile Include="Fragments\SearchDoctor\FridayFragment.cs" />
+    <Compile Include="Fragments\SearchDoctor\SaturdayFragment.cs" />
+    <Compile Include="Fragments\SearchDoctor\MondayFragment.cs" />
     <Compile Include="Fragments\SearchDoctor\SearchDoctorContainerFragment.cs" />
     <Compile Include="Fragments\SearchDoctor\SearchDoctorListFragment.cs" />
     <Compile Include="Helpers\DoctorsInfoModel.cs" />
@@ -149,9 +156,32 @@
     <AndroidResource Include="Resources\layout\DoctorsInfoTemplate.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\MondayView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\TuesdayView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\WednesdayView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ThursdayView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\FridayView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\SaturdayView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\WeeksButtonsTemplate.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\Strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -309,6 +339,17 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\userimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\buttoninselectedstate.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\weekbutton.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\roundbuttonblue.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

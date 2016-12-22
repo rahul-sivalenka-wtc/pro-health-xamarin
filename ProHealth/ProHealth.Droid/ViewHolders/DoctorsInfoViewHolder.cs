@@ -7,6 +7,8 @@ namespace ProHealth.Droid.ViewHolders
 {
     public class DoctorsInfoViewHolder : RecyclerView.ViewHolder
     {
+        public Button bookNow { get; set; }
+
         public ImageView doctorImage { get; set; }
         public TextView doctorName { get; set; }
         public TextView doctorRating { get; set; }
@@ -24,7 +26,9 @@ namespace ProHealth.Droid.ViewHolders
             experience = ItemView.FindViewById<TextView>(Resource.Id.experience);
             expertIn = ItemView.FindViewById<TextView>(Resource.Id.expertIn);
             specialization = ItemView.FindViewById<TextView>(Resource.Id.specialization);
+            bookNow = itemView.FindViewById<Button>(Resource.Id.booknow);
             itemView.Click += (sender, e) => listener(base.LayoutPosition);
         }
+
     }
 }

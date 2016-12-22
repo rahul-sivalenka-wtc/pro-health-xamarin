@@ -11,6 +11,7 @@ namespace ProHealth.Droid.Adapters
     public class DoctorsInfoAdapter : RecyclerView.Adapter
     {
         public event EventHandler<int> ItemClick;
+        public event EventHandler BookNow;
 
         // TODO Field region
         public DoctorsInformation doctorsInformation;
@@ -41,7 +42,14 @@ namespace ProHealth.Droid.Adapters
             vh.specialization.Text = doctorsInformation[position].Specialization;
             vh.expertIn.Text = doctorsInformation[position].ExpertIn;
             vh.experience.Text = doctorsInformation[position].Experience.ToString();
+            vh.bookNow.Click += BookNow_Click;
         }
+
+        private void BookNow_Click(object sender, EventArgs e)
+        {
+            BookNow.Invoke(sender, e);
+        }
+
         public override RecyclerView.ViewHolder OnCreateViewHolder(ViewGroup parent, int viewType)
         {
             var itemView = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.DoctorsInfoTemplate, parent, false);
