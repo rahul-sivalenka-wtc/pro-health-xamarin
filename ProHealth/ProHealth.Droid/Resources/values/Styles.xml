@@ -14,6 +14,9 @@
     <!--<item name="android:statusBarColor">@android:color/transparent</item>
 
     <item name="android:textCursorDrawable">@null</item>-->
+
+    <item name="android:actionBarStyle">@style/AppActionBarStyle</item>
+    <item name="actionBarStyle">@style/AppActionBarStyle</item>
   </style>
   
   <style name="AppTheme" parent="AppTheme.Base">
@@ -24,6 +27,11 @@
     <item name="android:windowActionBar">false</item>
     <item name="android:windowActionModeOverlay">false</item>
     <item name="android:windowBackground">@drawable/SplashScreen</item>
+  </style>
+
+  <style name="AppActionBarStyle" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+    <item name="android:background">@color/appBlue</item>
+    <item name="background">@color/appBlue</item>
   </style>
 
   <style name="LoginInputStyle">
@@ -117,6 +125,42 @@
     <item name="android:layout_width">match_parent</item>
     <item name="android:layout_height">1dp</item>
     <item name="android:background">@color/med_gray</item>
+  </style>
+
+  <style name="ProfileAccordionTitleStyle">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:layout_marginLeft">5dp</item>
+  </style>
+
+  <style name="ProfileShowMoreIconStyle">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_alignParentRight">true</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:layout_marginRight">10dp</item>
+  </style>
+
+  <style name="ProfileAccordionTitleIconStyle">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:textSize">35sp</item>
+  </style>
+
+  <style name="ProfileAccordionTitleBarStyle">
+    <item name="android:background">@drawable/roundbuttongray</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:paddingLeft">10dp</item>
+    <item name="android:paddingRight">10dp</item>
+    <item name="android:paddingTop">7dp</item>
+    <item name="android:paddingBottom">7dp</item>
   </style>
 
 </resources>

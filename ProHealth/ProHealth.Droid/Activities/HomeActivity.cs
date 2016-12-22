@@ -56,10 +56,10 @@ namespace ProHealth.Droid.Activities
 
         private void SetTabIcons()
         {
-            tabLayout.GetTabAt(0).SetIcon(Resource.Drawable.PersonIcon);
-            tabLayout.GetTabAt(1).SetIcon(Resource.Drawable.PersonIcon);
-            tabLayout.GetTabAt(2).SetIcon(Resource.Drawable.PersonIcon);
-            tabLayout.GetTabAt(3).SetIcon(Resource.Drawable.PersonIcon);
+            tabLayout.GetTabAt(0).SetIcon(Resource.Drawable.medical_specialist);
+            tabLayout.GetTabAt(1).SetIcon(Resource.Drawable.file);
+            tabLayout.GetTabAt(2).SetIcon(Resource.Drawable.calendar);
+            tabLayout.GetTabAt(3).SetIcon(Resource.Drawable.avatar);
         }
     }
 }

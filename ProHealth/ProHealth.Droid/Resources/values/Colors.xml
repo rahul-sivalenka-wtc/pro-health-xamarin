@@ -8,6 +8,7 @@
   <!-- App Colors -->
   <color name="appBlue">#00BCD4</color>
   <color name="appGray">#303030</color>
+  <color name="appLightGray">#EAEAEA</color>
   
   <!-- White to Black -->
   <color name="white">#FFFFFF</color>
