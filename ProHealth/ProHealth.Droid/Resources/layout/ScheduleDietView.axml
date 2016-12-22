@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <prohealth.droid.customcontrols.ProHealthIconTextView
-        android:text="Diet"
+        android:text="A"
+        android:textSize="50sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         local:typeface="prohealth_icon"

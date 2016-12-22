@@ -1,11 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using System;
-using System.Collections.Generic;
-
 using Android.Content;
 using Android.Content.Res;
 using Android.Graphics;
@@ -13,16 +5,15 @@ using Android.Runtime;
 using Android.Util;
 using Android.Widget;
 using ProHealth.Droid.Helpers;
+using System;
+using System.Collections.Generic;
 
 namespace ProHealth.Droid.CustomControls
 {
-    public enum ProHealthTypeface
-    {
-        ProHealthIcon = 0
-    }
-
     public class ProHealthIconTextView : TextView
     {
+        private const int ProHealthIcon = 0;
+
         private static readonly Dictionary<int, Typeface> Typefaces = new Dictionary<int, Typeface>(26);
 
         public ProHealthIconTextView(Context context) :
@@ -54,7 +45,7 @@ namespace ProHealth.Droid.CustomControls
             {
                 TypedArray values = context.ObtainStyledAttributes(attrs, Resource.Styleable.ProHealthIconTextView);
 
-                int typefaceValue = values.GetInt(Resource.Styleable.RobotoTextView_typeface, 0);
+                int typefaceValue = values.GetInt(Resource.Styleable.ProHealthIconTextView_typeface, 0);
                 values.Recycle();
                 var font = this.ObtainTypeface(context, typefaceValue);
                 this.SetTypeface(font, TypefaceStyle.Normal);
@@ -95,7 +86,7 @@ namespace ProHealth.Droid.CustomControls
                 Typeface typeface;
                 switch (typefaceValue)
                 {
-                    case ProHealthTypeface.ProHealthIcon:
+                    case ProHealthIcon:
                         typeface = Typeface.CreateFromAsset(context.Assets, Constants.ProHealthIconFontPath);
                         break;
                     default:
