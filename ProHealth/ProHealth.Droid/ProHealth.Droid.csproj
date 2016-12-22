@@ -88,6 +88,7 @@
     <Compile Include="Activities\BaseActivity.cs" />
     <Compile Include="Activities\HomeActivity.cs" />
     <Compile Include="Adapters\HomeViewPagerAdapter.cs" />
+    <Compile Include="Adapters\SchedulePagerAdapter.cs" />
     <Compile Include="AndroidNinjectModule.cs" />
     <Compile Include="App.cs" />
     <Compile Include="Fragments\BaseFragment.cs" />
@@ -95,7 +96,12 @@
     <Compile Include="Fragments\LoginFragment.cs" />
     <Compile Include="Fragments\Profile\ProfileContainerFragment.cs" />
     <Compile Include="Fragments\Records\RecordsContainerFragment.cs" />
+    <Compile Include="Fragments\Schedule\AppointmentsFragment.cs" />
+    <Compile Include="Fragments\Schedule\DietFragment.cs" />
+    <Compile Include="Fragments\Schedule\RemindersFragment.cs" />
     <Compile Include="Fragments\Schedule\ScheduleContainerFragment.cs" />
+    <Compile Include="Fragments\Schedule\ScheduleFragment.cs" />
+    <Compile Include="Fragments\Schedule\WorkoutFragment.cs" />
     <Compile Include="Fragments\SearchDoctor\SearchDoctorContainerFragment.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,6 +130,11 @@
     <AndroidResource Include="Resources\layout\ProfileContainerView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\ScheduleWorkoutView.axml" />
+    <AndroidResource Include="Resources\layout\ScheduleAppointmentsView.axml" />
+    <AndroidResource Include="Resources\layout\ScheduleDietView.axml" />
+    <AndroidResource Include="Resources\layout\ScheduleRemindersView.axml" />
+    <AndroidResource Include="Resources\layout\ScheduleView.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />

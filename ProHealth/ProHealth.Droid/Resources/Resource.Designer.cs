@@ -2002,11 +2002,23 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f06007b
 			public const int Root = 2131099771;
 			
+			// aapt resource value: 0x7f06008d
+			public const int ScheduleContent = 2131099789;
+			
+			// aapt resource value: 0x7f06008c
+			public const int ScheduleRemindersFrame = 2131099788;
+			
 			// aapt resource value: 0x7f06008b
 			public const int ScheduleRoot = 2131099787;
 			
-			// aapt resource value: 0x7f06008c
-			public const int SearchDoctorRoot = 2131099788;
+			// aapt resource value: 0x7f06008e
+			public const int ScheduleSlidingTabs = 2131099790;
+			
+			// aapt resource value: 0x7f06008f
+			public const int ScheduleViewPager = 2131099791;
+			
+			// aapt resource value: 0x7f060090
+			public const int SearchDoctorRoot = 2131099792;
 			
 			// aapt resource value: 0x7f060074
 			public const int SlidingTabs = 2131099764;
@@ -2593,22 +2605,37 @@ namespace ProHealth.Droid
 			public const int RecordsContainerView = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int ScheduleContainerView = 2130903090;
+			public const int ScheduleAppointmentsView = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int SearchDoctorContainerView = 2130903091;
+			public const int ScheduleContainerView = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int select_dialog_item_material = 2130903092;
+			public const int ScheduleDietView = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int select_dialog_multichoice_material = 2130903093;
+			public const int ScheduleRemindersView = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int select_dialog_singlechoice_material = 2130903094;
+			public const int ScheduleView = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int support_simple_spinner_dropdown_item = 2130903095;
+			public const int ScheduleWorkoutView = 2130903095;
+			
+			// aapt resource value: 0x7f030038
+			public const int SearchDoctorContainerView = 2130903096;
+			
+			// aapt resource value: 0x7f030039
+			public const int select_dialog_item_material = 2130903097;
+			
+			// aapt resource value: 0x7f03003a
+			public const int select_dialog_multichoice_material = 2130903098;
+			
+			// aapt resource value: 0x7f03003b
+			public const int select_dialog_singlechoice_material = 2130903099;
+			
+			// aapt resource value: 0x7f03003c
+			public const int support_simple_spinner_dropdown_item = 2130903100;
 			
 			static Layout()
 			{
