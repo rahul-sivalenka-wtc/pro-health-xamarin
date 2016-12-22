@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="ApplicationName">ProHealth.Droid</string>
+  <string name="ApplicationName">ProHealth</string>
 
   <string name="EmailText">E-mail | Mobile</string>
   <string name="PasswordText">Password</string>

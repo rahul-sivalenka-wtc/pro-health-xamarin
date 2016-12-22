@@ -991,32 +991,32 @@ namespace ProHealth.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0b0050
-			public const int abc_background_cache_hint_selector_material_dark = 2131427408;
-			
 			// aapt resource value: 0x7f0b0051
-			public const int abc_background_cache_hint_selector_material_light = 2131427409;
+			public const int abc_background_cache_hint_selector_material_dark = 2131427409;
 			
 			// aapt resource value: 0x7f0b0052
-			public const int abc_color_highlight_material = 2131427410;
+			public const int abc_background_cache_hint_selector_material_light = 2131427410;
+			
+			// aapt resource value: 0x7f0b0053
+			public const int abc_color_highlight_material = 2131427411;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int abc_input_method_navigation_guard = 2131427328;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int abc_primary_text_disable_only_material_dark = 2131427411;
-			
 			// aapt resource value: 0x7f0b0054
-			public const int abc_primary_text_disable_only_material_light = 2131427412;
+			public const int abc_primary_text_disable_only_material_dark = 2131427412;
 			
 			// aapt resource value: 0x7f0b0055
-			public const int abc_primary_text_material_dark = 2131427413;
+			public const int abc_primary_text_disable_only_material_light = 2131427413;
 			
 			// aapt resource value: 0x7f0b0056
-			public const int abc_primary_text_material_light = 2131427414;
+			public const int abc_primary_text_material_dark = 2131427414;
 			
 			// aapt resource value: 0x7f0b0057
-			public const int abc_search_url_text = 2131427415;
+			public const int abc_primary_text_material_light = 2131427415;
+			
+			// aapt resource value: 0x7f0b0058
+			public const int abc_search_url_text = 2131427416;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int abc_search_url_text_normal = 2131427329;
@@ -1027,11 +1027,11 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f0b0003
 			public const int abc_search_url_text_selected = 2131427331;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int abc_secondary_text_material_dark = 2131427416;
-			
 			// aapt resource value: 0x7f0b0059
-			public const int abc_secondary_text_material_light = 2131427417;
+			public const int abc_secondary_text_material_dark = 2131427417;
+			
+			// aapt resource value: 0x7f0b005a
+			public const int abc_secondary_text_material_light = 2131427418;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int accent_material_dark = 2131427332;
@@ -1045,6 +1045,9 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f0b0048
 			public const int appGray = 2131427400;
 			
+			// aapt resource value: 0x7f0b0049
+			public const int appLightGray = 2131427401;
+			
 			// aapt resource value: 0x7f0b0006
 			public const int background_floating_material_dark = 2131427334;
 			
@@ -1057,8 +1060,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f0b0009
 			public const int background_material_light = 2131427337;
 			
-			// aapt resource value: 0x7f0b004e
-			public const int black = 2131427406;
+			// aapt resource value: 0x7f0b004f
+			public const int black = 2131427407;
 			
 			// aapt resource value: 0x7f0b000a
 			public const int bright_foreground_disabled_material_dark = 2131427338;
@@ -1093,8 +1096,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f0b0045
 			public const int colorPrimaryDark = 2131427397;
 			
-			// aapt resource value: 0x7f0b004d
-			public const int dark_gray = 2131427405;
+			// aapt resource value: 0x7f0b004e
+			public const int dark_gray = 2131427406;
 			
 			// aapt resource value: 0x7f0b003a
 			public const int design_fab_shadow_end_color = 2131427386;
@@ -1144,8 +1147,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f0b0017
 			public const int foreground_material_light = 2131427351;
 			
-			// aapt resource value: 0x7f0b004c
-			public const int gray = 2131427404;
+			// aapt resource value: 0x7f0b004d
+			public const int gray = 2131427405;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int highlighted_text_material_dark = 2131427352;
@@ -1159,8 +1162,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f0b001b
 			public const int hint_foreground_material_light = 2131427355;
 			
-			// aapt resource value: 0x7f0b004a
-			public const int light_gray = 2131427402;
+			// aapt resource value: 0x7f0b004b
+			public const int light_gray = 2131427403;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int material_blue_grey_800 = 2131427356;
@@ -1198,8 +1201,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f0b0027
 			public const int material_grey_900 = 2131427367;
 			
-			// aapt resource value: 0x7f0b004b
-			public const int med_gray = 2131427403;
+			// aapt resource value: 0x7f0b004c
+			public const int med_gray = 2131427404;
 			
 			// aapt resource value: 0x7f0b0028
 			public const int primary_dark_material_dark = 2131427368;
@@ -1249,11 +1252,11 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f0b0037
 			public const int switch_thumb_disabled_material_light = 2131427383;
 			
-			// aapt resource value: 0x7f0b005a
-			public const int switch_thumb_material_dark = 2131427418;
-			
 			// aapt resource value: 0x7f0b005b
-			public const int switch_thumb_material_light = 2131427419;
+			public const int switch_thumb_material_dark = 2131427419;
+			
+			// aapt resource value: 0x7f0b005c
+			public const int switch_thumb_material_light = 2131427420;
 			
 			// aapt resource value: 0x7f0b0038
 			public const int switch_thumb_normal_material_dark = 2131427384;
@@ -1261,11 +1264,11 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f0b0039
 			public const int switch_thumb_normal_material_light = 2131427385;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int text_gray = 2131427407;
+			// aapt resource value: 0x7f0b0050
+			public const int text_gray = 2131427408;
 			
-			// aapt resource value: 0x7f0b0049
-			public const int white = 2131427401;
+			// aapt resource value: 0x7f0b004a
+			public const int white = 2131427402;
 			
 			static Color()
 			{
@@ -1846,124 +1849,145 @@ namespace ProHealth.Droid
 			public const int abc_textfield_search_material = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int Bananas = 2130837579;
+			public const int add = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int Brown_Rice = 2130837580;
+			public const int avatar = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int design_fab_background = 2130837581;
+			public const int Bananas = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int design_snackbar_background = 2130837582;
+			public const int Brown_Rice = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int earth = 2130837583;
+			public const int calendar = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int egg = 2130837584;
+			public const int design_fab_background = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int frame = 2130837585;
+			public const int design_snackbar_background = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int heart = 2130837586;
+			public const int earth = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int Icon = 2130837587;
+			public const int egg = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int Image_1 = 2130837588;
+			public const int file = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int Image_10 = 2130837589;
+			public const int frame = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int Image_2 = 2130837590;
+			public const int heart = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int Image_3 = 2130837591;
+			public const int Icon = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int Image_4 = 2130837592;
+			public const int Image_1 = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int Image_5 = 2130837593;
+			public const int Image_10 = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int Image_6 = 2130837594;
+			public const int Image_2 = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int Image_7 = 2130837595;
+			public const int Image_3 = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int Image_8 = 2130837596;
+			public const int Image_4 = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int Image_9 = 2130837597;
+			public const int Image_5 = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int LockIcon = 2130837598;
-			
-			// aapt resource value: 0x7f020072
-			public const int notification_template_icon_bg = 2130837618;
+			public const int Image_6 = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int PersonIcon = 2130837599;
+			public const int Image_7 = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int records_page_pre_button = 2130837600;
+			public const int Image_8 = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int records_page_reports_button = 2130837601;
+			public const int Image_9 = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ripplebluebutton = 2130837602;
+			public const int LockIcon = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ripplestyle = 2130837603;
+			public const int medical_specialist = 2130837603;
+			
+			// aapt resource value: 0x7f020079
+			public const int notification_template_icon_bg = 2130837625;
 			
 			// aapt resource value: 0x7f020064
-			public const int ripplewhitebutton = 2130837604;
+			public const int PersonIcon = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int roundbutton = 2130837605;
+			public const int plus = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int roundbuttonappblue = 2130837606;
+			public const int records_page_pre_button = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int roundbuttonselector_blue_black = 2130837607;
+			public const int records_page_reports_button = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int roundbuttonwhite = 2130837608;
+			public const int ripplebluebutton = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int roundtabappblue = 2130837609;
+			public const int ripplestyle = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int roundtabgray = 2130837610;
+			public const int ripplewhitebutton = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int roundtabselector = 2130837611;
+			public const int roundbutton = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int SplashScreen = 2130837612;
+			public const int roundbuttonappblue = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int SplashScreenBg = 2130837613;
+			public const int roundbuttongray = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int strawberry = 2130837614;
+			public const int roundbuttonselector_blue_black = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int TabSelector = 2130837615;
+			public const int roundbuttonwhite = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int UserIcon = 2130837616;
+			public const int roundtabappblue = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int userimg = 2130837617;
+			public const int roundtabgray = 2130837617;
+			
+			// aapt resource value: 0x7f020072
+			public const int roundtabselector = 2130837618;
+			
+			// aapt resource value: 0x7f020073
+			public const int SplashScreen = 2130837619;
+			
+			// aapt resource value: 0x7f020074
+			public const int SplashScreenBg = 2130837620;
+			
+			// aapt resource value: 0x7f020075
+			public const int strawberry = 2130837621;
+			
+			// aapt resource value: 0x7f020076
+			public const int TabSelector = 2130837622;
+			
+			// aapt resource value: 0x7f020077
+			public const int UserIcon = 2130837623;
+			
+			// aapt resource value: 0x7f020078
+			public const int userimg = 2130837624;
 			
 			static Drawable()
 			{
@@ -1996,8 +2020,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f060077
 			public const int PasswordText = 2131099767;
 			
-			// aapt resource value: 0x7f0600a1
-			public const int RecordsRoot = 2131099809;
+			// aapt resource value: 0x7f0600a5
+			public const int RecordsRoot = 2131099813;
 			
 			// aapt resource value: 0x7f06007b
 			public const int RegisterButton = 2131099771;
@@ -2005,23 +2029,23 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f06007c
 			public const int Root = 2131099772;
 			
-			// aapt resource value: 0x7f0600a4
-			public const int ScheduleContent = 2131099812;
-			
-			// aapt resource value: 0x7f0600a3
-			public const int ScheduleRemindersFrame = 2131099811;
-			
-			// aapt resource value: 0x7f0600a2
-			public const int ScheduleRoot = 2131099810;
-			
-			// aapt resource value: 0x7f0600a5
-			public const int ScheduleSlidingTabs = 2131099813;
-			
-			// aapt resource value: 0x7f0600a6
-			public const int ScheduleViewPager = 2131099814;
+			// aapt resource value: 0x7f0600a8
+			public const int ScheduleContent = 2131099816;
 			
 			// aapt resource value: 0x7f0600a7
-			public const int SearchDoctorRoot = 2131099815;
+			public const int ScheduleRemindersFrame = 2131099815;
+			
+			// aapt resource value: 0x7f0600a6
+			public const int ScheduleRoot = 2131099814;
+			
+			// aapt resource value: 0x7f0600a9
+			public const int ScheduleSlidingTabs = 2131099817;
+			
+			// aapt resource value: 0x7f0600aa
+			public const int ScheduleViewPager = 2131099818;
+			
+			// aapt resource value: 0x7f0600ab
+			public const int SearchDoctorRoot = 2131099819;
 			
 			// aapt resource value: 0x7f060075
 			public const int SlidingTabs = 2131099765;
@@ -2257,71 +2281,74 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f060029
 			public const int pin = 2131099689;
 			
-			// aapt resource value: 0x7f06008f
-			public const int prAppCompatImageView = 2131099791;
-			
-			// aapt resource value: 0x7f060097
-			public const int prAppCompatImageView1 = 2131099799;
-			
-			// aapt resource value: 0x7f06009e
-			public const int prAppCompatImageView2 = 2131099806;
-			
-			// aapt resource value: 0x7f060094
-			public const int prBloodGroup = 2131099796;
-			
-			// aapt resource value: 0x7f060095
-			public const int prChangePasswordButton = 2131099797;
+			// aapt resource value: 0x7f060090
+			public const int prAppCompatImageView = 2131099792;
 			
 			// aapt resource value: 0x7f060098
-			public const int prChangePasswordLayout = 2131099800;
-			
-			// aapt resource value: 0x7f06009b
-			public const int prConformPassword = 2131099803;
-			
-			// aapt resource value: 0x7f06008b
-			public const int prDoctorImage = 2131099787;
-			
-			// aapt resource value: 0x7f06008c
-			public const int prDoctorName = 2131099788;
-			
-			// aapt resource value: 0x7f060092
-			public const int prEmail = 2131099794;
-			
-			// aapt resource value: 0x7f060093
-			public const int prMobileNo = 2131099795;
-			
-			// aapt resource value: 0x7f06009a
-			public const int prNewPassword = 2131099802;
-			
-			// aapt resource value: 0x7f060099
-			public const int prOldPassword = 2131099801;
-			
-			// aapt resource value: 0x7f06008d
-			public const int prProfileButton = 2131099789;
-			
-			// aapt resource value: 0x7f060090
-			public const int prProfileLayout = 2131099792;
-			
-			// aapt resource value: 0x7f06009c
-			public const int prQuickButton = 2131099804;
+			public const int prAppCompatImageView1 = 2131099800;
 			
 			// aapt resource value: 0x7f06009f
-			public const int prQuickLayout = 2131099807;
+			public const int prAppCompatImageView2 = 2131099807;
 			
-			// aapt resource value: 0x7f06008a
-			public const int prRootLayout = 2131099786;
-			
-			// aapt resource value: 0x7f060091
-			public const int prUserName = 2131099793;
-			
-			// aapt resource value: 0x7f06008e
-			public const int prUsericon = 2131099790;
+			// aapt resource value: 0x7f060095
+			public const int prBloodGroup = 2131099797;
 			
 			// aapt resource value: 0x7f060096
-			public const int prUsericon1 = 2131099798;
+			public const int prChangePasswordButton = 2131099798;
+			
+			// aapt resource value: 0x7f060099
+			public const int prChangePasswordLayout = 2131099801;
+			
+			// aapt resource value: 0x7f06009c
+			public const int prConfirmPassword = 2131099804;
+			
+			// aapt resource value: 0x7f06008c
+			public const int prDoctorImage = 2131099788;
+			
+			// aapt resource value: 0x7f06008d
+			public const int prDoctorName = 2131099789;
+			
+			// aapt resource value: 0x7f060093
+			public const int prEmail = 2131099795;
+			
+			// aapt resource value: 0x7f06008a
+			public const int prMainRoot = 2131099786;
+			
+			// aapt resource value: 0x7f060094
+			public const int prMobileNo = 2131099796;
+			
+			// aapt resource value: 0x7f06009b
+			public const int prNewPassword = 2131099803;
+			
+			// aapt resource value: 0x7f06009a
+			public const int prOldPassword = 2131099802;
+			
+			// aapt resource value: 0x7f06008e
+			public const int prProfileButton = 2131099790;
+			
+			// aapt resource value: 0x7f060091
+			public const int prProfileLayout = 2131099793;
 			
 			// aapt resource value: 0x7f06009d
-			public const int prUsericon2 = 2131099805;
+			public const int prQuickButton = 2131099805;
+			
+			// aapt resource value: 0x7f0600a0
+			public const int prQuickLayout = 2131099808;
+			
+			// aapt resource value: 0x7f06008b
+			public const int prRootLayout = 2131099787;
+			
+			// aapt resource value: 0x7f060092
+			public const int prUserName = 2131099794;
+			
+			// aapt resource value: 0x7f06008f
+			public const int prUsericon = 2131099791;
+			
+			// aapt resource value: 0x7f060097
+			public const int prUsericon1 = 2131099799;
+			
+			// aapt resource value: 0x7f06009e
+			public const int prUsericon2 = 2131099806;
 			
 			// aapt resource value: 0x7f060006
 			public const int progress_circular = 2131099654;
@@ -2332,8 +2359,17 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f06003a
 			public const int prohealth_icon = 2131099706;
 			
-			// aapt resource value: 0x7f0600a0
-			public const int prquickText = 2131099808;
+			// aapt resource value: 0x7f0600a1
+			public const int prquickText = 2131099809;
+			
+			// aapt resource value: 0x7f0600a2
+			public const int prquickText2 = 2131099810;
+			
+			// aapt resource value: 0x7f0600a3
+			public const int prquickText3 = 2131099811;
+			
+			// aapt resource value: 0x7f0600a4
+			public const int prquickText4 = 2131099812;
 			
 			// aapt resource value: 0x7f060055
 			public const int radio = 2131099733;
@@ -2879,6 +2915,9 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f09013f
 			public const int Animation_Design_BottomSheetDialog = 2131296575;
 			
+			// aapt resource value: 0x7f09015a
+			public const int AppActionBarStyle = 2131296602;
+			
 			// aapt resource value: 0x7f090158
 			public const int AppTheme = 2131296600;
 			
@@ -3317,35 +3356,35 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f090140
 			public const int Base_Widget_Design_TabLayout = 2131296576;
 			
-			// aapt resource value: 0x7f090163
-			public const int BlackRoundButton = 2131296611;
-			
-			// aapt resource value: 0x7f09015d
-			public const int FormContainer = 2131296605;
-			
-			// aapt resource value: 0x7f090162
-			public const int FormContent = 2131296610;
-			
-			// aapt resource value: 0x7f090160
-			public const int FormFooter = 2131296608;
+			// aapt resource value: 0x7f090164
+			public const int BlackRoundButton = 2131296612;
 			
 			// aapt resource value: 0x7f09015e
-			public const int FormGroup = 2131296606;
+			public const int FormContainer = 2131296606;
+			
+			// aapt resource value: 0x7f090163
+			public const int FormContent = 2131296611;
 			
 			// aapt resource value: 0x7f090161
-			public const int FormHeader = 2131296609;
+			public const int FormFooter = 2131296609;
 			
-			// aapt resource value: 0x7f09015c
-			public const int HeaderTextStyle = 2131296604;
+			// aapt resource value: 0x7f09015f
+			public const int FormGroup = 2131296607;
+			
+			// aapt resource value: 0x7f090162
+			public const int FormHeader = 2131296610;
+			
+			// aapt resource value: 0x7f09015d
+			public const int HeaderTextStyle = 2131296605;
+			
+			// aapt resource value: 0x7f090166
+			public const int HorizontalLine = 2131296614;
+			
+			// aapt resource value: 0x7f09015b
+			public const int LoginInputStyle = 2131296603;
 			
 			// aapt resource value: 0x7f090165
-			public const int HorizontalLine = 2131296613;
-			
-			// aapt resource value: 0x7f09015a
-			public const int LoginInputStyle = 2131296602;
-			
-			// aapt resource value: 0x7f090164
-			public const int PlainRippleButton = 2131296612;
+			public const int PlainRippleButton = 2131296613;
 			
 			// aapt resource value: 0x7f090017
 			public const int Platform_AppCompat = 2131296279;
@@ -3377,8 +3416,20 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f09001b
 			public const int Platform_Widget_AppCompat_Spinner = 2131296283;
 			
-			// aapt resource value: 0x7f09015f
-			public const int ReminderMealTimeButtonStyle = 2131296607;
+			// aapt resource value: 0x7f09016a
+			public const int ProfileAccordionTitleBarStyle = 2131296618;
+			
+			// aapt resource value: 0x7f090169
+			public const int ProfileAccordionTitleIconStyle = 2131296617;
+			
+			// aapt resource value: 0x7f090167
+			public const int ProfileAccordionTitleStyle = 2131296615;
+			
+			// aapt resource value: 0x7f090168
+			public const int ProfileShowMoreIconStyle = 2131296616;
+			
+			// aapt resource value: 0x7f090160
+			public const int ReminderMealTimeButtonStyle = 2131296608;
 			
 			// aapt resource value: 0x7f090028
 			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131296296;
@@ -3422,8 +3473,8 @@ namespace ProHealth.Droid
 			// aapt resource value: 0x7f090035
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131296309;
 			
-			// aapt resource value: 0x7f09015b
-			public const int TabTextAppearance = 2131296603;
+			// aapt resource value: 0x7f09015c
+			public const int TabTextAppearance = 2131296604;
 			
 			// aapt resource value: 0x7f0900b6
 			public const int TextAppearance_AppCompat = 2131296438;

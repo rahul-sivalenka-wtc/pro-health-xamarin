@@ -1,254 +1,258 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/prMainRoot"
+    android:background="@color/appLightGray"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <RelativeLayout
-      android:layout_width="match_parent"
-      android:id="@+id/prRootLayout"
-      android:layout_marginBottom="20dp"
-      android:background="@color/white"
-      android:layout_height="wrap_content">
-    <android.support.v7.widget.AppCompatImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/prDoctorImage"
-        android:src="@drawable/userimg" />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_toRightOf="@id/prDoctorImage"
-        android:orientation="vertical"
-        android:layout_marginTop="27dp"
-        android:layout_marginLeft="10dp"
-        android:layout_height="wrap_content">
-      <android.support.v7.widget.AppCompatTextView
-          android:layout_width="wrap_content"
-          android:text="Rajesh"
-          android:textSize="16dp"
-          android:textColor="@color/appBlue"
-          android:id="@+id/prDoctorName"
-          android:layout_height="wrap_content" />
-      <android.support.v7.widget.AppCompatTextView
-          android:layout_width="wrap_content"
-          android:text="sivamohan@gmail.com"
-          android:textSize="12dp"
-          android:textColor="@color/black"
-          android:layout_height="wrap_content" />
-    </LinearLayout>
-  </RelativeLayout>
   <ScrollView
-      android:layout_width="match_parent"
-      android:layout_below="@id/prRootLayout"
-      android:layout_marginTop="10dp"
-      android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="vertical">
-        <RelativeLayout
-            android:background="@drawable/roundbutton"
-            android:layout_width="match_parent"
-            android:id="@+id/prProfileButton"
-            android:layout_height="50dp">
-          <android.support.v7.widget.AppCompatImageView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:src="@drawable/usericon"
-              android:id="@+id/prUsericon"
-              android:background="@color/white"
-              android:layout_marginLeft="5dp" />
-          <android.support.v7.widget.AppCompatTextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Profile"
-              android:textSize="20dp"
-              android:textColor="@color/white"
-              android:layout_marginTop="7dp"
-              android:layout_marginLeft="10dp"
-              android:layout_toRightOf="@id/prUsericon" />
-          <android.support.v7.widget.AppCompatImageView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:src="@drawable/usericon"
-              android:layout_alignParentTop="true"
-              android:layout_alignParentRight="true"
-              android:layout_alignParentEnd="true"
-              android:layout_marginRight="13dp"
-              android:layout_marginEnd="13dp"
-              android:background="@color/white"
-              android:id="@+id/prAppCompatImageView" />
-        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/prRootLayout"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/prDoctorImage"
+            android:src="@drawable/userimg" />
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/prProfileLayout"
-            android:visibility="gone"
-            android:orientation="vertical">
-          <android.support.v7.widget.AppCompatEditText
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/prUserName"
-              android:hint="Name"
-              android:textSize="15dp"
-              android:layout_marginLeft="10dp" />
-          <android.support.v7.widget.AppCompatEditText
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/prEmail"
-              android:hint="Email"
-              android:textSize="15dp"
-              android:layout_marginLeft="10dp"
-              android:layout_marginTop="10dp" />
-          <android.support.v7.widget.AppCompatEditText
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/prMobileNo"
-              android:hint="Mobile No"
-              android:textSize="15dp"
-              android:layout_marginLeft="10dp"
-              android:layout_marginTop="10dp" />
-          <android.support.v7.widget.AppCompatEditText
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/prBloodGroup"
-              android:hint="Blood Group"
-              android:textSize="15dp"
-              android:layout_marginLeft="10dp"
-              android:layout_marginTop="10dp" />
-        </LinearLayout>
-      </LinearLayout>
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="10dp"
-          android:orientation="vertical">
-        <RelativeLayout
-            android:background="@drawable/roundbutton"
-            android:layout_width="match_parent"
-            android:id="@+id/prChangePasswordButton"
-            android:layout_height="50dp">
-          <android.support.v7.widget.AppCompatImageView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:src="@drawable/usericon"
-              android:id="@+id/prUsericon1"
-              android:background="@color/white"
-              android:layout_marginLeft="5dp" />
-          <android.support.v7.widget.AppCompatTextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Change Password"
-              android:textSize="20dp"
-              android:textColor="@color/white"
-              android:layout_marginTop="7dp"
-              android:layout_marginLeft="10dp"
-              android:layout_toRightOf="@id/prUsericon1" />
-          <android.support.v7.widget.AppCompatImageView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:src="@drawable/usericon"
-              android:layout_alignParentTop="true"
-              android:layout_alignParentRight="true"
-              android:layout_alignParentEnd="true"
-              android:layout_marginRight="13dp"
-              android:layout_marginEnd="13dp"
-              android:background="@color/white"
-              android:id="@+id/prAppCompatImageView1" />
-        </RelativeLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:visibility="gone"
-            android:id="@+id/prChangePasswordLayout"
-            android:orientation="vertical">
-          <android.support.v7.widget.AppCompatEditText
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/prOldPassword"
-              android:hint="Old Password"
-              android:textSize="15dp"
-              android:layout_marginLeft="10dp"
-              android:layout_marginTop="10dp" />
-          <android.support.v7.widget.AppCompatEditText
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/prNewPassword"
-              android:hint="New Password"
-              android:textSize="15dp"
-              android:layout_marginLeft="10dp"
-              android:layout_marginTop="10dp" />
-          <android.support.v7.widget.AppCompatEditText
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/prConformPassword"
-              android:hint="Conform Password"
-              android:textSize="15dp"
-              android:layout_marginLeft="10dp"
-              android:layout_marginTop="10dp" />
-        </LinearLayout>
-      </LinearLayout>
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="10dp"
-          android:orientation="vertical">
-        <RelativeLayout
-            android:background="@drawable/roundbutton"
-            android:layout_width="match_parent"
-            android:id="@+id/prQuickButton"
-            android:layout_height="50dp">
-          <android.support.v7.widget.AppCompatImageView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:src="@drawable/usericon"
-              android:id="@+id/prUsericon2"
-              android:background="@color/white"
-              android:layout_marginLeft="5dp" />
-          <android.support.v7.widget.AppCompatTextView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="Quick Login Setup"
-              android:textSize="20dp"
-              android:textColor="@color/white"
-              android:layout_marginTop="7dp"
-              android:layout_marginLeft="10dp"
-              android:layout_toRightOf="@id/prUsericon2" />
-          <android.support.v7.widget.AppCompatImageView
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:src="@drawable/usericon"
-              android:layout_alignParentTop="true"
-              android:layout_alignParentRight="true"
-              android:layout_alignParentEnd="true"
-              android:layout_marginRight="13dp"
-              android:layout_marginEnd="13dp"
-              android:background="@color/white"
-              android:id="@+id/prAppCompatImageView2" />
-        </RelativeLayout>
-        <LinearLayout
-            android:id="@+id/prQuickLayout"
-            android:layout_width="match_parent"
-            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/prDoctorImage"
+            android:orientation="vertical"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="10dp"
             android:layout_height="wrap_content">
-          <android.support.v7.widget.AppCompatEditText
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:id="@+id/prquickText"
-              android:hint="Conform Password"
-              android:textSize="15dp"
-              android:layout_marginLeft="10dp"
-              android:layout_marginTop="10dp" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:text="Rajesh"
+                android:textSize="16dp"
+                android:textColor="@color/appBlue"
+                android:id="@+id/prDoctorName"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:text="sivamohan@gmail.com"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_below="@+id/prRootLayout"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+              
+                <RelativeLayout
+                    android:id="@+id/prProfileButton"
+                    style="@style/ProfileAccordionTitleBarStyle">
+                  <prohealth.droid.customcontrols.ProHealthIconTextView
+                      android:id="@+id/prUsericon"
+                      android:text="A"
+                      local:typeface="prohealth_icon"
+                      style="@style/ProfileAccordionTitleIconStyle"/>
+                  <android.support.v7.widget.AppCompatTextView
+                      android:text="Profile"
+                      android:layout_toRightOf="@id/prUsericon"
+                      style="@style/ProfileAccordionTitleStyle"/>
+                  <android.support.v7.widget.AppCompatImageView
+                      android:src="@drawable/add"
+                      android:id="@+id/prAppCompatImageView"
+                      style="@style/ProfileShowMoreIconStyle"/>
+                </RelativeLayout>
+              
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/prProfileLayout"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prUserName"
+                        android:hint="Name"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prEmail"
+                        android:hint="Email"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prMobileNo"
+                        android:hint="Mobile No"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prBloodGroup"
+                        android:hint="Blood Group"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+              
+                <RelativeLayout
+                    android:id="@+id/prChangePasswordButton"
+                    style="@style/ProfileAccordionTitleBarStyle">
+                  <prohealth.droid.customcontrols.ProHealthIconTextView
+                      android:id="@+id/prUsericon1"
+                      android:text="B"
+                      local:typeface="prohealth_icon"
+                      style="@style/ProfileAccordionTitleIconStyle"/>
+                  <android.support.v7.widget.AppCompatTextView
+                      android:text="Change Password"
+                      android:layout_toRightOf="@id/prUsericon1"
+                      style="@style/ProfileAccordionTitleStyle"/>
+                  <android.support.v7.widget.AppCompatImageView
+                      android:src="@drawable/add"
+                      android:id="@+id/prAppCompatImageView1"
+                      style="@style/ProfileShowMoreIconStyle"/>
+                </RelativeLayout>
+              
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:id="@+id/prChangePasswordLayout"
+                    android:orientation="vertical">
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prOldPassword"
+                        android:hint="Old Password"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prNewPassword"
+                        android:hint="New Password"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prConfirmPassword"
+                        android:hint="Confirm Password"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                  
+                   <RelativeLayout
+                      android:id="@+id/prQuickButton"
+                      style="@style/ProfileAccordionTitleBarStyle">
+                    <prohealth.droid.customcontrols.ProHealthIconTextView
+                        android:id="@+id/prUsericon2"
+                        android:text="j"
+                        local:typeface="prohealth_icon"
+                        style="@style/ProfileAccordionTitleIconStyle"/>
+                    <android.support.v7.widget.AppCompatTextView
+                        android:text="Quick Login Setup"
+                        android:layout_toRightOf="@id/prUsericon2"
+                        style="@style/ProfileAccordionTitleStyle"/>
+                    <android.support.v7.widget.AppCompatImageView
+                        android:src="@drawable/add"
+                        android:id="@+id/prAppCompatImageView2"
+                        style="@style/ProfileShowMoreIconStyle"/>
+                  </RelativeLayout>
+                  
+                
+                  <LinearLayout
+                    android:id="@+id/prQuickLayout"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prquickText"
+                        android:hint="*"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1"
+                        android:textSize="15dp"
+                        android:inputType="textPassword" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prquickText2"
+                        android:hint="*"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1"
+                        android:textSize="15dp"
+                        android:inputType="textPassword" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prquickText3"
+                        android:hint="*"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1"
+                        android:textSize="15dp"
+                        android:inputType="textPassword" />
+                    <android.support.v7.widget.AppCompatEditText
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/prquickText4"
+                        android:hint="*"
+                        android:gravity="center_horizontal"
+                        android:maxLength="1"
+                        android:textSize="15dp"
+                        android:inputType="textPassword" />
+                </LinearLayout>
+            </LinearLayout>
+            <android.support.v7.widget.AppCompatButton
+                android:layout_gravity="center_horizontal"
+                android:text="Logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/appBlue"
+                android:background="@drawable/ripplewhitebutton" />
         </LinearLayout>
       </LinearLayout>
-      <android.support.v7.widget.AppCompatButton
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:text="Logout"
-          android:textColor="@color/appBlue"
-          android:background="@drawable/ripplewhitebutton" />
-    </LinearLayout>
-  </ScrollView>
+    </ScrollView>
 </RelativeLayout>
