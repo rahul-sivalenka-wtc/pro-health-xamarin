@@ -75,6 +75,10 @@
       <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Xamarin.Android.Support.v7.RecyclerView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
       <Private>True</Private>
@@ -87,11 +91,15 @@
   <ItemGroup>
     <Compile Include="Activities\BaseActivity.cs" />
     <Compile Include="Activities\HomeActivity.cs" />
+    <Compile Include="Adapters\DoctorsInfoAdapter.cs" />
     <Compile Include="Adapters\HomeViewPagerAdapter.cs" />
     <Compile Include="Adapters\SchedulePagerAdapter.cs" />
+    <Compile Include="Adapters\SearchDoctorListAdapter.cs" />
+    <Compile Include="Adapters\TabsFragmentPagerAdapter.cs" />
     <Compile Include="AndroidNinjectModule.cs" />
     <Compile Include="App.cs" />
     <Compile Include="CustomControls\ProHealthIconTextView.cs" />
+    <Compile Include="Extensions\ViewExtensions.cs" />
     <Compile Include="Fragments\BaseFragment.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Fragments\Dialogs\CustomDialogFragment.cs" />
@@ -110,6 +118,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ReminderService.cs" />
     <Compile Include="SplashScreen.cs" />
+    <Compile Include="ViewHolders\DoctorsInfoViewHolder.cs" />
+    <Compile Include="ViewHolders\SearchDoctorListViewHolder.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\Fonts\Pro-Health.ttf" />
@@ -143,6 +153,17 @@
     <AndroidResource Include="Resources\layout\ScheduleView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\DoctorsInfoTemplate.axml" />
+    <AndroidResource Include="Resources\layout\DoctorsInfoView.axml" />
+    <AndroidResource Include="Resources\layout\FridayView.axml" />
+    <AndroidResource Include="Resources\layout\SaturdayView.axml" />
+    <AndroidResource Include="Resources\layout\WeeksButtonsTemplate.axml" />
+    <AndroidResource Include="Resources\layout\WednesdayView.axml" />
+    <AndroidResource Include="Resources\layout\TuesdayView.axml" />
+    <AndroidResource Include="Resources\layout\ThursdayView.axml" />
+    <AndroidResource Include="Resources\layout\SearchDoctorListView.axml" />
+    <AndroidResource Include="Resources\layout\searchDoctorListTemplate.axml" />
+    <AndroidResource Include="Resources\layout\MondayView.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -297,6 +318,21 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\buttoninselectedstate.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\roundbuttonblue.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\userimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\weekbutton.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
