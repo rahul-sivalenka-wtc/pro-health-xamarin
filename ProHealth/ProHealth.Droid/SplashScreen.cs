@@ -14,7 +14,7 @@ namespace ProHealth.Droid
     )]
     public class SplashScreen : AppCompatActivity
     {
-        private int splashTimeout = 3000;
+        private int splashTimeout = 2000;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
