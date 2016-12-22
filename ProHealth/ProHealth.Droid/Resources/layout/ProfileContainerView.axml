@@ -253,6 +253,8 @@
                 android:layout_height="wrap_content"
                 android:text="Logout"
                 android:textColor="@color/appBlue"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="100dp"
                 android:background="@drawable/ripplewhitebutton" />
         </LinearLayout>
     </ScrollView>

@@ -29,10 +29,10 @@ namespace ProHealth.Droid.Fragments
             return inflater.Inflate(FragmentId, null);
         }
 
-        protected void HideActionBar()
-        {
-            ParentActivity.SupportActionBar.Hide();
-        }
+        //protected void HideActionBar()
+        //{
+        //    ParentActivity.SupportActionBar.Hide();
+        //}
 
         protected void ShowActionBar()
         {

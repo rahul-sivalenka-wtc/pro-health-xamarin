@@ -19,7 +19,7 @@ namespace ProHealth.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            this.SupportActionBar.Hide();
+            //this.SupportActionBar.Hide();
         }
 
         protected async override void OnResume()
