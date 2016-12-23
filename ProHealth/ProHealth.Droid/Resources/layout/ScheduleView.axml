@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ScheduleContent">
+    <!--<android.support.design.widget.TabLayout
+        android:id="@+id/ScheduleSlidingTabs"
+        android:layout_width="match_parent"
+        android:background="@color/appGray"
+        local:tabBackground="@drawable/roundtabselector"
+        local:tabMode="scrollable"
+        local:tabTextAppearance="@style/TabTextAppearance"
+        local:tabSelectedTextColor="@color/appGray"
+        local:tabIndicatorHeight="0dp"
+        local:tabTextColor="@color/light_gray"
+        android:layout_height="wrap_content" />-->
+  <android.support.design.widget.TabLayout
+        android:id="@+id/ScheduleSlidingTabs"
+        android:layout_height="72dp"
+        android:layout_width="match_parent"
+        android:background="@color/appGray"
+        local:tabMode="scrollable"
+        local:tabIndicatorHeight="0dp" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ScheduleViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+</LinearLayout>

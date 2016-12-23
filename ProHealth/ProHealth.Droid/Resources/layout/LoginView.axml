@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBlue"
+    android:gravity="center">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="35dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/EmailText"
+                style="@style/LoginInputStyle"
+                android:drawableLeft="@drawable/UserIcon"
+                android:hint="@string/EmailText"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/PasswordText"
+                style="@style/LoginInputStyle"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/LockIcon"
+                android:hint="@string/PasswordText"
+                android:inputType="textPassword" />
+            <TextView
+                android:id="@+id/ForgotPasswordText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="4dp"
+                android:text="@string/ForgotPasswordText"
+                android:textColor="@color/white" />
+            <Button
+                android:id="@+id/LoginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/appBlue"
+                android:background="@drawable/ripplewhitebutton"
+                android:text="@string/LoginButtonText" />
+            <TextView
+                android:id="@+id/OrText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/OrText"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/RegisterButton"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:text="@string/RegisterButtonText"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
