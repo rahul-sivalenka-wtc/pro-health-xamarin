@@ -91,10 +91,13 @@
   <ItemGroup>
     <Compile Include="Activities\BaseActivity.cs" />
     <Compile Include="Activities\HomeActivity.cs" />
+    <Compile Include="Activities\NotificationsActivity.cs" />
+    <Compile Include="Activities\SuggestionsActivity.cs" />
     <Compile Include="Adapters\DoctorsInfoAdapter.cs" />
     <Compile Include="Adapters\HomeViewPagerAdapter.cs" />
     <Compile Include="Adapters\SchedulePagerAdapter.cs" />
     <Compile Include="Adapters\SearchDoctorListAdapter.cs" />
+    <Compile Include="Adapters\TabsFragmentPagerAdapter.cs" />
     <Compile Include="AndroidNinjectModule.cs" />
     <Compile Include="App.cs" />
     <Compile Include="CustomControls\ProHealthIconTextView.cs" />
@@ -111,8 +114,14 @@
     <Compile Include="Fragments\Schedule\ScheduleFragment.cs" />
     <Compile Include="Fragments\Schedule\WorkoutFragment.cs" />
     <Compile Include="Fragments\SearchDoctor\DoctorsInfoFragment.cs" />
+    <Compile Include="Activities\FridayFragment.cs" />
+    <Compile Include="Activities\MondayFragment.cs" />
+    <Compile Include="Activities\SaturdayFragment.cs" />
     <Compile Include="Fragments\SearchDoctor\SearchDoctorContainerFragment.cs" />
     <Compile Include="Fragments\SearchDoctor\SearchDoctorListFragment.cs" />
+    <Compile Include="Activities\ThursdayFragment.cs" />
+    <Compile Include="Activities\TuesdayFragment.cs" />
+    <Compile Include="Activities\WednesdayFragment.cs" />
     <Compile Include="Helpers\Constants.cs" />
     <Compile Include="Helpers\DoctorsInfoModel.cs" />
     <Compile Include="Helpers\SearchDoctorModel.cs" />
@@ -158,6 +167,15 @@
     <AndroidResource Include="Resources\layout\SearchDoctorListView.axml" />
     <AndroidResource Include="Resources\layout\DoctorsInfoTemplate.axml" />
     <AndroidResource Include="Resources\layout\DoctorsInfoView.axml" />
+    <AndroidResource Include="Resources\layout\ActionBar.axml" />
+    <AndroidResource Include="Resources\layout\NotificationsView.axml" />
+    <AndroidResource Include="Resources\layout\SuggestionsView.axml" />
+    <AndroidResource Include="Resources\layout\FridayView.axml" />
+    <AndroidResource Include="Resources\layout\MondayView.axml" />
+    <AndroidResource Include="Resources\layout\SaturdayView.axml" />
+    <AndroidResource Include="Resources\layout\ThursdayView.axml" />
+    <AndroidResource Include="Resources\layout\TuesdayView.axml" />
+    <AndroidResource Include="Resources\layout\WednesdayView.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -351,6 +369,24 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\circleappblue.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\action_menu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\notifications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_menu_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\weekbutton.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\buttoninselectedstate.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\roundbuttonblue.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
