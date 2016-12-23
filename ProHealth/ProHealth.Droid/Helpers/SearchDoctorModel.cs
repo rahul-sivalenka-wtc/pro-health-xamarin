@@ -14,9 +14,9 @@ namespace ProHealth.Droid.Helpers
 {
     public class SearchDoctorModel
     {
-        private int iconID;
+        private char iconID;
 
-        public int IconId
+        public char IconId
         {
             get { return iconID; }
             set { iconID = value; }
@@ -53,12 +53,12 @@ namespace ProHealth.Droid.Helpers
 
         public static SearchDoctorModel[] MyReportsCategories =
         {
-            new SearchDoctorModel {IconId=Resource.Drawable.heart,Count=00,Name="Dinesh" },
-            new SearchDoctorModel {IconId=Resource.Drawable.heart,Count=01,Name="Rahul" },
-            new SearchDoctorModel {IconId=Resource.Drawable.heart,Count=05,Name="veswanth" },
-            new SearchDoctorModel {IconId=Resource.Drawable.heart,Count=03,Name="kiran" },
-            new SearchDoctorModel {IconId=Resource.Drawable.heart,Count=07,Name="siva" },
-            new SearchDoctorModel {IconId=Resource.Drawable.heart,Count=09,Name="Reddy" }
+            new SearchDoctorModel {IconId='J',Count=00,Name="Dentist" },
+            new SearchDoctorModel {IconId='K',Count=01,Name="Dermatologist" },
+            new SearchDoctorModel {IconId='L',Count=05,Name="Gastroenterologist" },
+            new SearchDoctorModel {IconId='M',Count=03,Name="ENT Specialist" },
+            new SearchDoctorModel {IconId='N',Count=07,Name="Psyciatrist" },
+            new SearchDoctorModel {IconId='S',Count=09,Name="Cardiologist" }
         };
         public SearchDoctorInfo()
         {
