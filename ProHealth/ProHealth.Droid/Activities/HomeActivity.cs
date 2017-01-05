@@ -21,7 +21,7 @@ namespace ProHealth.Droid.Activities
     [Activity(
         LaunchMode = LaunchMode.SingleTop,
         NoHistory = true,
-        MainLauncher = true, Theme = "@style/AppTheme.Base"
+        Theme = "@style/AppTheme.Base"
     )]
     public class HomeActivity : BaseActivity
     {
